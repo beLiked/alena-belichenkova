@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* overflow: hidden; */
+  margin: 30;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+}
+
+.containerGen {
+  background-color: #111111;
+  border-radius: 30px;
+  width: 600px;
+  height: 1100px;
+}
+.avatar {
+  padding: 20px;
+  width: 200px;
+  margin-bottom: 2px;
+}
+
+.title {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+}
+.prof {
+  color: white;
+  margin-top: 25px;
+  font-weight: 300;
+}
+.subtitle2 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  margin-top:-540px; 
+  padding: 10px  5px 10px -10px;
+}
+
+.slide {
+  height: 50vh;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.social img{
+  width: 150px;
+}
